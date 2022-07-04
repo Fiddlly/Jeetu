@@ -2,7 +2,7 @@ class Solution {
 public:
     int rob(vector<int>& nums) {
         int n = nums.size();
-        vector<int> ans(n+1,0);
+        int ans[n+1];
         if(n == 0){
             return 0;
         }
