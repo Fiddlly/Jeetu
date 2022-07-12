@@ -2,11 +2,11 @@ class Solution {
 public:
     bool isMatch(string s, string p) {
         
-        vector<vector<char>> dp(s.length()+1, vector<char> (p.length(),-1));
+        vector<vector<int>> dp(s.length()+1, vector<int> (p.length(),-1));
         return isMatch(0,0,s,p,dp);   
     }
     
-    bool isMatch(int i, int j, string& s, string& p, vector<vector<char>> &dp){
+    bool isMatch(int i, int j, string& s, string& p, vector<vector<int>> &dp){
         
         int sn = s.size();
         
